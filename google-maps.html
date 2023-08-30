@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anfahrt zu unserem Friseursalon</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    
+    <style>
+        /* Gemeinsame Styles für alle Bildschirmgrößen */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #010101e4;
+        }
+
+        h1, h3 {
+            text-align: center;
+            color: hsla(6, 67%, 55%, 0.895);
+        }
+
+        .google-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .google-maps {
+            width: 100%;
+            box-shadow: 0 0 50px hsla(6, 67%, 55%, 0.895);
+            height: 400px;
+            margin: 10px 0;
+        }
+
+        nav {
+        background-color: hsla(6, 67%, 55%, 0.895);
+        color: white;
+        display: flex;
+        justify-content: center; /* Hier wird der Inhalt zentriert */
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .logo a {
+        color: white;
+        font-size: 26px;
+        text-decoration: none;
+        font-weight: 550;
+        border-radius: 5px;
+        transition: color 0.3s;  /* ist dafür da, damit man beim übergang mit der maus einen sanften effekt hat */
+    }
+
+    .logo a:hover {
+        color: black;
+    }
+        .nav-links {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .nav-links li {
+            margin: 5px 0;
+        }
+
+        .impressum {
+            background-color: hsla(6, 88%, 53%, 0.602);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 21px;
+            margin-top: 10%;
+        }
+
+        .impressum h1,h2 {
+            color: white;
+        }
+
+        @media screen and (min-width: 768px) {
+            /* Styles für Bildschirmbreiten ab 768px */
+            .google-section {
+                flex-direction: row;
+            }
+
+            .google-maps {
+                width: 50%;
+                height: 500px;
+                margin: 0 10px;
+            }
+
+            .nav-links {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav> 
+        <div class="logo">
+            <a href="./index.html">Zurück zur Hauptseite</a>
+        </div>  
+       
+    </nav>
+    
+    <h1>Anfahrt zu unserem Friseursalon</h1>
+    <h3>Hauptstraße 11, 2440 Gramatneusiedl</h3>
+
+    <div class="google-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1691617150176!6m8!1m7!1s8IJsB-Z9fojAnnSUkM_bFw!2m2!1d48.026920198838!2d16.49051736573915!3f62.75433773253971!4f-9.733433034400278!5f0.6745983420174608" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade" 
+        class="google-maps"></iframe>
+        
+        <iframe class="google-maps" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.1703034072707!2d16.488110976007555!3d48.027008258852916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c53c041513c2d%3A0x27ab8e9c6b15286e!2sFIKO%20Barberstation!5e1!3m2!1sde!2sat!4v1691618829535!5m2!1sde!2sat"
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer class="impressum">
+        <!--<p>&copy; 2023 Friseurladen "HairStyle". Alle Rechte vorbehalten.</p> -->
+        <h1>Impressum</h1> 
+        <p> Max Mustermann <br>
+            Friseursalon (Einzelunternehmer) <br>
+            Musterstraße 111 <br>
+            Gebäude 44 <br>
+            2440 Gramatneusiedl
+        </p>
+
+        <h2>Kontakt</h2>
+          <p>Telefon: <b> 0660 5252 596</b> <br>
+            E-Mail: <b>mustermann@musterfirma.de</b> <br> <!--E-Mail muss sehr warscheinlich noch erstellt werden, ist im hosting Packet bereits drinnen, muss aber nach dem Kauf konfiguriert werden!!  -->
+          </p>
+
+    </footer>
+</body>
+</html>
